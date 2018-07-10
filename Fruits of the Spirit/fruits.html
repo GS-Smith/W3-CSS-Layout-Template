@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<title>Fruits of the Spirit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8,.bgimg-9 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('pics/fruits.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Love) */
+.bgimg-2 {
+    background-image: url("pics/love.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Joy) */
+.bgimg-3 {
+    background-image: url("pics/joy.jpg");
+    min-height: 400px;
+}
+/* Second image (Peace) */
+.bgimg-4 {
+    background-image: url("pics/peace.jpg");
+    min-height: 400px;
+}
+/* Second image (Patience) */
+.bgimg-5 {
+    background-image: url("pics/patience.jpg");
+    min-height: 400px;
+}
+/* Second image (Kindness) */
+.bgimg-6 {
+    background-image: url("pics/kind.jpg");
+    min-height: 400px;
+}
+/* Second image (Hands/Faithfulness) */
+.bgimg-7 {
+    background-image: url("pics/hands.jpg");
+    min-height: 400px;
+}
+/* Second image (Gentleness) */
+.bgimg-8 {
+    background-image: url("pics/gentleness.jpg");
+    min-height: 400px;
+}
+/* Second image (Self-control) */
+.bgimg-9 {
+    background-image: url("pics/control.jpg");
+    min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#love" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOVE</a>
+    <a href="#joy" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> JOY</a>
+    <a href="#peace" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> PEACE</a>
+    <a href="#patience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> PATIENCE</a>
+    <a href="#kind" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> KINDNESS</a>
+    <a href="#faith" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> FAITHFULNESS</a>
+    <a href="#gentle" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> GENTLENESS</a>
+    <a href="#control" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SELF-CONTROL</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FRUITS <span class="w3-hide-small">OF THE </span> SPIRIT</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT THIS PROJECT</h3>
+  <p class="w3-center"><em>I love Jesus</em></p>
+  <p>I need to show off a bit so I can prove I understand what I'm doing. Why not play around with a topic I love?</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name is Galen.
+<br>
+This is not a picture of me.
+<br>
+
+      </b></p><br>
+      <img src="pics/sample.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to this website. I just wanted to make a quick little sumthin' sumthin' and decided to make it about the Fruits of the Holy Spirit because Jesus is AWESOME!!!.
+  </p>
+<blockquote cite="https://www.biblegateway.com/passage/?search=Galatians%205%3A22-23&version=AMP;ESV"><i><b>Galatians 5:22-23 Amplified Bible (AMP)</b>
+22 But the fruit of the Spirit [the result of His presence within us] is love [unselfish concern for others], joy, [inner] peace, patience [not the ability to wait, but how we act while waiting], kindness, goodness, faithfulness, 23 gentleness, self-control. Against such things there is no law.</i></blockquote>
+    </div>
+  </div>
+  
+
+<div id="love" class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+
+<!-- Love Parallax Image with Portfolio Text -->
+<div  class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">LOVE</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="joy">
+  <h3 class="w3-center">LOVE</h3>
+  <p class="w3-center"><em>Here's info on love.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Joy Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">JOY</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Joy</h3>
+  <p class="w3-center"><em>Here's info on joy.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Peace Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PEACE</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">PEACE</h3>
+  <p class="w3-center"><em>Here's info on peace.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Patience Parallax Image with Portfolio Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PATIENCE</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">PATIENCE</h3>
+  <p class="w3-center"><em>Here's info on patience.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Kind Parallax Image with Portfolio Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">KINDNESS</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">KINDNESS</h3>
+  <p class="w3-center"><em>Here's info on kindness.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Hands Parallax Image with Portfolio Text -->
+<div class="bgimg-7 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">FAITHFULNESS</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">FAITHFULNESS</h3>
+  <p class="w3-center"><em>Here's info on faithfulness.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Gentleness Parallax Image with Portfolio Text -->
+<div class="bgimg-8 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">GENTLENESS</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">GENTLENESS</h3>
+  <p class="w3-center"><em>Here's info on gentleness.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+
+<!-- Control Parallax Image with Portfolio Text -->
+<div class="bgimg-9 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SELF-CONTROL</span>
+  </div>
+</div>
+
+<!-- Container (text section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">SELF-CONTROL</h3>
+  <p class="w3-center"><em>Here's info on self-control.<br> I haven't put it in yet. Here's where it will go eventually.</em></p><br>
+
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
